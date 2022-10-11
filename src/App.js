@@ -1,11 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Main from './components/Main/Main';
+
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element: <Main></Main>,
+    children:[
+      {
+        path:'/',
+        
+      }
+    ]
+  }
+
+])
 
 function App() {
   return (
-    <div className="App">
-          <h1>random</h1>
-    </div>
+    <RouterProvider router = {router}></RouterProvider>
   );
 }
 
