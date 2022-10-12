@@ -51,11 +51,6 @@ const Home = () => {
                     }
                 </div>
             </div>
-            {/* <img
-                src=''
-                alt=""
-                className="w-5/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-40 bg-gray-500"
-            /> */}
         </section>
     );
 };
